@@ -1,6 +1,6 @@
 package common
 
-var Version = "v4.6.3" // this hard coding will be replaced automatically when building, no need to manually change
+var Version = "v4.6.4" // this hard coding will be replaced automatically when building, no need to manually change
 
 const (
 	RequestIdKey = "X-Request-Id"
@@ -19,33 +19,33 @@ var DefaultOpenaiModelList = []string{
 	"gpt-4",
 	"gpt-4-0613",
 	"gpt-4-1106-preview",
-	" gpt-4-0125-preview",
-	" gpt-4-turbo-preview",
-	" gpt-4-turbo",
-	" gpt-4-turbo-2024-04-09",
-	" gpt-4o",
-	" gpt-4o-2024-05-13",
-	" gpt-4o-mini",
-	" gpt-4o-mini-2024-07-18",
-	" text-embedding-ada-002",
-	" text-embedding-3-small",
-	" text-embedding-3-large",
-	" text-moderation-latest",
-	" text-moderation-stable",
-	" davinci-002",
-	" babbage-002",
-	" dall-e-2",
-	" dall-e-3",
-	" whisper-1",
-	" tts-1",
-	" tts-1-1106",
-	" tts-1-hd",
-	" tts-1-hd-1106",
-	" o1-mini-2024-09-12",
-	" gpt-4o-2024-08-06",
-	" o1-preview-2024-09-12",
-	" o1-mini",
-	" o1-preview",
+	"gpt-4-0125-preview",
+	"gpt-4-turbo-preview",
+	"gpt-4-turbo",
+	"gpt-4-turbo-2024-04-09",
+	"gpt-4o",
+	"gpt-4o-2024-05-13",
+	"gpt-4o-mini",
+	"gpt-4o-mini-2024-07-18",
+	"text-embedding-ada-002",
+	"text-embedding-3-small",
+	"text-embedding-3-large",
+	"text-moderation-latest",
+	"text-moderation-stable",
+	"davinci-002",
+	"babbage-002",
+	"dall-e-2",
+	"dall-e-3",
+	"whisper-1",
+	"tts-1",
+	"tts-1-1106",
+	"tts-1-hd",
+	"tts-1-hd-1106",
+	"o1-mini-2024-09-12",
+	"gpt-4o-2024-08-06",
+	"o1-preview-2024-09-12",
+	"o1-mini",
+	"o1-preview",
 }
 
 var CozeErrorMessages = append(append(CozeOtherErrorMessages, CozeUserDailyLimitErrorMessages...), CozeCreatorDailyLimitErrorMessages...)
@@ -59,8 +59,9 @@ var CozeOtherErrorMessages = []string{
 }
 
 var CozeUserDailyLimitErrorMessages = []string{
-	"Hi there! You've used up your free chat credits. To continue enjoying our service, please consider upgrading to our premium plan [Upgrade to Coze Premium to chat](https://www.coze.com/premium?connectID=10000028&botID=7376964308913422354)",
+	"Hi there! You've used up your free chat credits. To continue enjoying our service, please consider upgrading to our premium plan [Upgrade to Coze Premium to chat]",
 	"You have exceeded the daily limit for sending messages to the bot. Please try again later.",
+	"Hi there! You've used up your credits for today. To continue enjoying our service, please try again tomorrow or consider upgrading to our premium plan.",
 }
 
 var CozeCreatorDailyLimitErrorMessages = []string{
