@@ -32,6 +32,7 @@ var DefaultOpenaiModelList = []string{
 	"dall-e-3",
 	"o1-mini",
 	"o1-preview",
+	
 	"o3-mini",
 }
 
